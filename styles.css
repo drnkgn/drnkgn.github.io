@@ -1,0 +1,72 @@
+@font-face { font-family: JetBrains; src: url('public/fonts/JetBrains-Regular.ttf') }
+@font-face { font-family: JetBrains; font-weight: bold; src: url('public/fonts/JetBrains-Bold.ttf') }
+@font-face { font-family: JetBrains; font-style: italic; src: url('public/fonts/JetBrains-Italic.ttf') }
+@font-face { font-family: JetBrains; font-weight: bold; font-style: italic; src: url('public/fonts/JetBrains-BoldItalic.ttf') }
+
+:root {
+  --bg: #282828;
+  --fg: #ebdbb2;
+  --fg4: #a89984;
+  --red: #cc241d;
+  --green: #98971a;
+}
+
+* {
+  font-family: JetBrains;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3 {
+  color: var(--fg4);
+  font-weight: normal;
+}
+
+h1 {
+  color: var(--fg);
+}
+
+#link-wrapper {
+  display: flex;
+  gap: 0 4px;
+  margin-top: 5px;
+}
+
+#link-label {
+  color: var(--red);
+}
+
+#links {
+  display: flex;
+  gap: 0 6px;
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.separator {
+  color: var(--green);
+}
